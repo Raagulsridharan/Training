@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First DOM</title>
+    <Script>
+        function gettingFirstH1(){
+            alert("This works!!!");
+            var firstH1 = document.getElementById("firstH1");
+
+            var text = firstH1.innerText;
+            alert(text);
+
+            firstH1.innerHTML="changed h1...";
+        }
+        function changedHeading(){
+            alert("test works!!!");
+            var arr = document.getElementsByTagName("h1");
+            arr[0].innerHTML = "h1";
+            arr[1].innerHTML = "h2";
+        }
+        // arrow function
+        clickMe = () => {
+            alert("test works!!!");
+            var arr = document.getElementsByTagName("h1");
+            arr[0].innerHTML = "h1";
+            arr[1].innerHTML = "h2";
+        }
+
+        inserting = (heading) => {
+            alert("inserting");
+            var element = document.createElement("h1");
+            element.textContent = heading;
+            return element;
+        }
+        clickToInsert = () =>{
+            alert("element inserting...")
+
+            var element = document.createElement("h1");
+            var text = document.createTextNode("Hello")
+            element.append(text);
+
+            var whereToInsert = document.getElementById("firstH1");
+            
+            whereToInsert.parentNode.insertBefore(element,whereToInsert);
+        }
+        clickToInsertPara = () =>{
+            alert("element inserting...")
+
+            var element = document.createElement("p");
+            var text = document.createTextNode("this is paragraph content")
+            element.append(text);
+
+            var whereToInsert = document.getElementById("divContent");
+            
+            whereToInsert.parentNode.insertBefore(element,whereToInsert);
+        }
+    </Script>
+</head>
+<body>
+
+    <div id="divContent">
+        <h1 id="firstH1" onclick="gettingFirstH1()">This is my first heading</h1>
+        <h1>this is the second heading</h1>
+        <h1>third heading</h1>
+    </div>
+
+    <button onclick="clickMe()">Click me</button><br>
+    <button onclick="clickToInsert()">Click me for insert</button>
+    
+</body>
+</html>

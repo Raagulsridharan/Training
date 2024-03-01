@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "id": 101,
+      "name": "Scott",
+      "password": "123"
+    },
+    {
+      "id": 102,
+      "name": "David",
+      "password": "123"
+    },
+    {
+      "id": 201,
+      "name": "Jasdhir",
+      "password": "123"
+    },
+    {
+      "id": "33",
+      "name": "3333",
+      "password": "333333"
+    },
+    {
+      "id": "401",
+      "name": "Hari",
+      "password": "HariHari"
+    },
+    {
+      "id": "1",
+      "password": "123"
+    },
+    {
+      "id": "3",
+      "name": "bazeer",
+      "password": "32344"
+    }
+  ]
+}

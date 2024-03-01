@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event demo</title>
+
+    <!-- <script>
+        function onClickHandler(){
+            alert("not event listener");
+        }
+    </script> -->
+    
+</head>
+<body>
+    
+    <!-- <button onclick="onClickHandler()">Click me!</button> -->
+
+    <!--event Listener-->
+    <button id="btn">Click me!!!</button> 
+
+    <script>
+        var eventOnBtn = document.getElementById("btn");
+        eventOnBtn.addEventListener("click",onClickHandler);
+
+        function onClickHandler(){
+            alert("click handler event...");
+        }
+        
+    </script>
+</body>
+</html>

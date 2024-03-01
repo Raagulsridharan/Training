@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h3>Forms demo...</h3>
+    <hr>
+    <form action="/endpointyourapi" method="">
+        <label for="">Enter your username : </label>
+        <input type="text" name="username" id="username" placeholder="Enter your name" required>
+        <br>
+        <label for="">Enter password : </label>
+        <input type="password" name="password" id="password">
+        <br>
+        <label for="">Gender : </label>
+        <input type="radio" name="gender" id="male" value="m">Male
+        <input type="radio" name="gender" id="female" value="f">Female
+        <br>
+        <label for="">Age : </label>
+        <input type="number" name="age" id="age">
+        <br>
+        <label for="">Hobbis : </label>
+        <input type="checkbox" name="hobbis" id="" value="drawing">Drawing
+        <input type="checkbox" name="hobbis" id="" value="playing">Playing
+        <input type="checkbox" name="hobbis" id="" value="cooking">Cooking
+        <input type="checkbox" name="hobbis" id="" value="signing">singing
+        <br>
+        <label for="">Select Course : </label>
+        <select name="course" id="">
+            <option value="java">Java</option>
+            <option value="j2ee">J2EE</option>
+            <option value="sql">SQL</option>
+            <option value="webrech">Web Tech</option>
+        </select>
+        <br>
+        <label for="">Select Course : </label>
+        <select name="course" id="" multiple>
+            <option value="java">Java</option>
+            <option value="j2ee">J2EE</option>
+            <option value="sql">SQL</option>
+            <option value="webrech">Web Tech</option>
+        </select>
+        <br>
+        <label for="">Address : </label>
+        <textarea name="" id="" cols="30" rows="5" minlength="10" maxlength="50"></textarea>
+        <br>
+        <button>Submit</button>
+        <button>Reset</button>
+    </form>
+</body>
+</html>

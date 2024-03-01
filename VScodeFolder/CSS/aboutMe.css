@@ -1,0 +1,32 @@
+
+/* #name{
+    text-align: right;
+    padding-left: 400px;
+} */
+h4{
+    color: blue;
+}
+#imgtag{
+    border: 5px solid black;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    margin-left: 150px;
+}
+table{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+#bodyLeft{
+    padding-right: 40px;
+}
+#bodyRight{
+    margin-left: 200px;
+}
+ul{
+    line-height: 25px;
+}
+p.content{
+    line-height: 25px;
+    text-align: justify;
+}
